@@ -105,7 +105,15 @@ dataSource:
   driverClassName: org.h2.Driver
   username: sa
   password: ''
-grails.plugin.springsecurity.rest.token.storage.jwt.secret: 7BvhwrwHSasdlkjadslkj4ZByaN5MymJ4CxVpAMtST7iPHZSt
+grails.plugin.springsecurity.rest.token.storage.jwt.secret: '0123456789abcdefghijklmnopqrstuvwxyz'
+grails:
+  plugin:
+    springsecurity:
+      rest:
+        token:
+          storage:
+            jwt:
+              secret: '0123456789abcdefghijklmnopqrstuvwxyz'
 environments:
   development:
     dataSource:
