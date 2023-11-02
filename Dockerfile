@@ -14,4 +14,4 @@ COPY --from=builder /home/gradle/whatever/build/libs/*.war /opt/app/whatever.war
 # Expose http port
 EXPOSE 8080
 # RUN cmd
-CMD ["sh", "-c", "java $JAVA_OPTS -Dgrails.env=${GRAILS_ENV} -jar /opt/app/whatever.war"]
+CMD ["sh", "-c", "java $JAVA_OPTS -Dgrails.env=${_GRAILS_ENV} -jar /opt/app/whatever.war"]
