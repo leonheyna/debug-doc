@@ -62,7 +62,6 @@ dependencies {
     // REST client
     compile 'org.grails:grails-datastore-rest-client:6.1.12.RELEASE'
     compile "org.grails.plugins:spring-security-core:4.0.5"
-    compile 'org.grails.plugins:spring-security-rest:3.0.1'
     compile "org.flywaydb:flyway-core"
     compile 'org.grails.plugins:external-config:2.0.0'
     compile "io.micronaut:micronaut-inject-groovy"
