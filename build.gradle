@@ -65,6 +65,13 @@ dependencies {
     compile "org.flywaydb:flyway-core"
     compile 'org.grails.plugins:external-config:2.0.0'
     compile "io.micronaut:micronaut-inject-groovy"
+    platform 'com.google.cloud:spring-cloud-gcp-dependencies:4.5.1'
+    platform 'com.google.cloud:libraries-bom:26.26.0'
+    implementation 'com.zaxxer:HikariCP:5.1.0'
+    implementation 'mysql:mysql-connector-java:8.0.28'
+    implementation('com.google.cloud.sql:mysql-socket-factory-connector-j-8:1.14.1') {
+        exclude group: 'com.google.guava', module: 'guava'
+    }
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
     runtime 'org.codehaus.groovy:groovy-dateutil'
